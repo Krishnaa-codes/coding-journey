@@ -16,7 +16,8 @@ class School:
         return sorted(self.students,key=lambda name: (self.students[name], name))
 
     def grade(self, grade_number):
-        return sorted(name for name, grade in self.students.items() if grade == grade_number)
+        return sorted(name for name, grade in self.students.items() if grade == grade_number
+)
 
     def added(self):
         return self._added
